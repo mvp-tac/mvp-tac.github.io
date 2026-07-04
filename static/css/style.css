@@ -171,6 +171,10 @@ p {
   line-height: 1.7;
 }
 
+#abstract p {
+  text-align: justify;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
