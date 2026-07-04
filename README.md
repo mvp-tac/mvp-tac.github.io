@@ -1,5 +1,3 @@
 # MVP-Tac Project Website
 
-Static project page for MVP-Tac.
-
-Update author list, final IROS year, video links, and resource links before final release.
+Text-only placeholder website for the accepted IROS paper. PDF previews, paper snapshots, and download links are intentionally removed for now.

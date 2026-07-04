@@ -2,14 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="MVP-Tac: A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor for Robot-Assisted Minimally Invasive Surgery.">
+  <meta name="description" content="MVP-Tac: A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor for Robot-Assisted Minimally Invasive Surgery.">
   <meta name="keywords" content="MVP-Tac, tactile sensor, photoelasticity, robot-assisted minimally invasive surgery, RMIS, endoscopy, palpation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MVP-Tac</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="./static/css/style.css">
 </head>
 
@@ -22,6 +20,7 @@
       <a href="#abstract">Abstract</a>
       <a href="#design">Sensor</a>
       <a href="#results">Results</a>
+      <a href="#paper">Paper</a>
       <a href="#citation">Citation</a>
     </div>
   </div>
@@ -29,6 +28,7 @@
 
 <section class="hero" id="top">
   <div class="container">
+    <div class="tag">Accepted at IROS</div>
     <h1 class="title">MVP-Tac</h1>
     <h2 class="subtitle">A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor<br class="desktop-break">for Robot-Assisted Minimally Invasive Surgery</h2>
 
@@ -36,37 +36,30 @@
 
     <div class="authors">
       <span>Md Rakibul Islam Prince</span>
-      <span>Jaeeun Kim</span>
-      <span>Yuhao Zhao</span>
-      <span>Mason Vrshek</span>
-      <span>Shivani Reddy Sama</span>
-      <span>Adyaa Khera</span>
-      <span>Sheeraz Athar</span>
-      <span>Zijie Xu</span>
-      <span>Jiabin Liu</span>
-      <span>Shaoting Lin</span>
-      <span>Wei Li</span>
-      <span>Yu She*</span>
+      <span>Co-authors to be added</span>
+      <span>Yu She</span>
     </div>
 
-    <p class="affiliation">Purdue University &nbsp;|&nbsp; Stony Brook University &nbsp;|&nbsp; Michigan State University</p>
+    <p class="affiliation">Purdue University</p>
 
     <div class="button-row">
-      <a class="button" href="./static/paper.pdf"><i class="fas fa-file-pdf"></i>Paper</a>
-      <a class="button muted" href="#video"><i class="fas fa-video"></i>Video Coming Soon</a>
-      <a class="button muted" href="#resources"><i class="fas fa-code"></i>Code Coming Soon</a>
-      <a class="button muted" href="#resources"><i class="fas fa-tools"></i>Hardware Coming Soon</a>
-      <a class="button" href="#citation"><i class="fas fa-quote-right"></i>BibTeX</a>
+      <a class="button muted" href="#paper">Paper Coming Soon</a>
+      <a class="button muted" href="#video">Video Coming Soon</a>
+      <a class="button muted" href="#resources">Code Coming Soon</a>
+      <a class="button muted" href="#resources">Hardware Coming Soon</a>
+      <a class="button" href="#citation">BibTeX</a>
     </div>
   </div>
 </section>
 
 <section class="teaser">
-  <div class="container">
-    <img src="./static/images/overview_page.png" alt="MVP-Tac overview figure">
-    <p class="caption">
-      MVP-Tac integrates co-located vision and tactile sensing in a compact endoscope-compatible form factor.
-    </p>
+  <div class="container narrow">
+    <div class="text-teaser">
+      <h2>Dual-modal tactile sensing for surgical palpation</h2>
+      <p>
+        MVP-Tac is a compact endoscope-compatible sensor that combines visual feedback and reflective photoelastic tactile sensing in a single package.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -113,59 +106,44 @@
 </section>
 
 <section class="section" id="design">
-  <div class="container">
+  <div class="container narrow">
     <h2>Sensor Design</h2>
-    <div class="two-col">
-      <div>
-        <p>
-          MVP-Tac combines a dual-mode elastomer module, a reflective circular-polariscope optical module, and a compact
-          perception module. The tactile mode uses stress-induced birefringence in a photoelastic elastomer, while the
-          vision mode allows the camera to see through the semi-transparent membrane when external illumination dominates.
-        </p>
-        <p>
-          This design avoids structured lighting and supports a compact configuration suitable for constrained surgical
-          environments where visual feedback and tactile palpation must coexist.
-        </p>
-      </div>
-      <img src="./static/images/calibration_page.png" alt="MVP-Tac fabrication and calibration">
-    </div>
+    <p>
+      MVP-Tac combines a dual-mode elastomer module, a reflective circular-polariscope optical module, and a compact
+      perception module. The tactile mode uses stress-induced birefringence in a photoelastic elastomer, while the
+      vision mode allows the camera to see through the semi-transparent membrane when external illumination dominates.
+    </p>
+    <p>
+      This design avoids structured lighting and supports a compact configuration suitable for constrained surgical
+      environments where visual feedback and tactile palpation must coexist.
+    </p>
   </div>
 </section>
 
 <section class="section gray" id="results">
-  <div class="container">
+  <div class="container narrow">
     <h2>Experimental Results</h2>
-    <div class="two-col">
-      <img src="./static/images/results_page.png" alt="MVP-Tac force and tumor classification results">
-      <div>
-        <h3>Force Calibration and Hardness Classification</h3>
-        <p>
-          MVP-Tac uses image features together with a photoelastic gradient metric, G², for force estimation. The fusion
-          model achieved MAE = 0.0511 N, RMSE = 0.0685 N, and R² = 0.9874 on the test set in the 0–2 N range.
-        </p>
-        <p>
-          A ResNet-18 + GRU video classifier predicts tumor hardness from 16-frame palpation clips, achieving 97.37%
-          accuracy for exposed tumor phantoms and 92.11% accuracy for subdermal tumor phantoms.
-        </p>
-      </div>
-    </div>
+    <h3>Force Calibration and Hardness Classification</h3>
+    <p>
+      MVP-Tac uses image features together with a photoelastic gradient metric, G², for force estimation. The fusion
+      model achieved MAE = 0.0511 N, RMSE = 0.0685 N, and R² = 0.9874 on the test set in the 0–2 N range.
+    </p>
+    <p>
+      A ResNet-18 + GRU video classifier predicts tumor hardness from 16-frame palpation clips, achieving 97.37%
+      accuracy for exposed tumor phantoms and 92.11% accuracy for subdermal tumor phantoms.
+    </p>
   </div>
 </section>
 
 <section class="section" id="colonoscopy">
-  <div class="container">
+  <div class="container narrow">
     <h2>Simulated Colonoscopy Demonstration</h2>
-    <div class="two-col">
-      <div>
-        <p>
-          MVP-Tac was mounted on a UR5e robot and inserted into an intestine-mimicking phantom to demonstrate a
-          vision-guided search-then-palpate workflow. The system visually scanned the lumen, reconstructed a 3D
-          photomap of the luminal wall, localized nodules, and then switched to tactile mode for local hardness
-          classification.
-        </p>
-      </div>
-      <img src="./static/images/colonoscopy_page.png" alt="MVP-Tac simulated colonoscopy experiment">
-    </div>
+    <p>
+      MVP-Tac was mounted on a UR5e robot and inserted into an intestine-mimicking phantom to demonstrate a
+      vision-guided search-then-palpate workflow. The system visually scanned the lumen, reconstructed a 3D
+      photomap of the luminal wall, localized nodules, and then switched to tactile mode for local hardness
+      classification.
+    </p>
   </div>
 </section>
 
@@ -181,13 +159,10 @@
 <section class="section" id="paper">
   <div class="container narrow">
     <h2>Paper</h2>
-    <div class="paper-box">
-      <img src="./static/images/paper_thumb.png" alt="Paper thumbnail">
-      <div>
-        <p><strong>MVP-Tac: A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor for Robot-Assisted Minimally Invasive Surgery</strong></p>
-        <p>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
-        <p><a href="#">Download paper PDF</a></p>
-      </div>
+    <div class="paper-note">
+      <p><strong>MVP-Tac: A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor for Robot-Assisted Minimally Invasive Surgery</strong></p>
+      <p>Accepted at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</p>
+      <p>The final PDF and supplementary materials will be released after publication.</p>
     </div>
   </div>
 </section>
@@ -210,7 +185,7 @@
     <h2>Citation</h2>
     <pre><code>@inproceedings{prince2026mvptac,
   title={MVP-Tac: A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor for Robot-Assisted Minimally Invasive Surgery},
-  author={Prince, Md Rakibul Islam and Kim, Jaeeun and Zhao, Yuhao and Vrshek, Mason and Sama, Shivani Reddy and Khera, Adyaa and Athar, Sheeraz and Xu, Zijie and Liu, Jiabin and Lin, Shaoting and Li, Wei and She, Yu},
+  author={Prince, Md Rakibul Islam and Others and She, Yu},
   booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   year={2026}
 }</code></pre>
