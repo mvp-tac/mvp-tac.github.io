@@ -29,41 +29,44 @@
 
 <section class="hero" id="top">
   <div class="container">
+    <p class="tag">First Endoscopic VBTS with Co-Located Vision and Tactile Sensing for RMIS</p>
     <h1 class="title">MVP-Tac</h1>
     <h2 class="subtitle">A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor<br class="desktop-break">for Robot-Assisted Minimally Invasive Surgery</h2>
 
     <p class="conference">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
 
     <div class="authors">
-      <span>Md Rakibul Islam Prince</span>
-      <span>Jaeeun Kim</span>
-      <span>Yuhao Zhao</span>
-      <span>Mason Vrshek</span>
-      <span>Shivani Reddy Sama</span>
-      <span>Adyaa Khera</span>
-      <span>Sheeraz Athar</span>
-      <span>Zijie Xu</span>
-      <span>Jiabin Liu</span>
-      <span>Shaoting Lin</span>
-      <span>Wei Li</span>
-      <span>Yu She*</span>
+      <span><a href="https://prince-css.github.io/" target="_blank">Md Rakibul Islam Prince</a></span>
+      <span><a href="https://www.purduemars.com/people/" target="_blank">Jaeeun Kim</a></span>
+      <span><a href="https://yuhao-zhou.com/" target="_blank">Yuhao Zhao</a></span>
+      <span><a href="https://www.purduemars.com/people/" target="_blank">Mason Vrshek</a></span>
+      <span><a href="https://www.purduemars.com/people/" target="_blank">Shivani Reddy Sama</a></span>
+      <span><a href="https://www.purduemars.com/people/" target="_blank">Adyaa Khera</a></span>
+      <span><a href="https://sheerazathar.github.io/" target="_blank">Sheeraz Athar</a></span>
+      <span><a href="https://www.weili-geo.com/team" target="_blank">Zijie Xu</a></span>
+      <span><a href="https://sites.google.com/view/shaotinglin/member" target="_blank">Jiabin Liu</a></span>
+      <span><a href="https://sites.google.com/view/shaotinglin/" target="_blank">Shaoting Lin</a></span>
+      <span><a href="https://www.weili-geo.com/" target="_blank">Wei Li</a></span>
+      <span><a href="https://www.purduemars.com/" target="_blank">Yu She*</a></span>
     </div>
 
     <p class="affiliation">Purdue University &nbsp;|&nbsp; Stony Brook University &nbsp;|&nbsp; Michigan State University</p>
 
     <div class="button-row">
       <a class="button" href="#"><i class="fas fa-file-pdf"></i>Paper</a>
-      <a class="button muted" href="#video"><i class="fas fa-video"></i>Video Coming Soon</a>
-      <a class="button muted" href="#resources"><i class="fas fa-code"></i>Code Coming Soon</a>
+      <!-- <a class="button muted" href="#video"><i class="fas fa-video"></i>Video Coming Soon</a> -->
       <a class="button muted" href="#resources"><i class="fas fa-tools"></i>Hardware Coming Soon</a>
-      <a class="button" href="#citation"><i class="fas fa-quote-right"></i>BibTeX</a>
+      <a class="button" href="https://github.com/prince-css/mvp-tac"><i class="fas fa-code"></i>Code</a>
+      <!-- <a class="button" href="#citation"><i class="fas fa-quote-right"></i>BibTeX</a> -->
     </div>
   </div>
 </section>
 
 <section class="teaser">
   <div class="container">
-    <img src="./static/images/overview_page.png" alt="MVP-Tac overview figure">
+    <video autoplay muted loop playsinline>
+      <source src="./static/videos/website_head2.mp4" type="video/mp4">
+    </video>
     <p class="caption">
       MVP-Tac integrates co-located vision and tactile sensing in a compact endoscope-compatible form factor.
     </p>
@@ -78,13 +81,21 @@
       yet it still lacks tactile feedback for palpation while operating under strict requirements to preserve reliable vision.
       MVP-Tac is a compact vision-based tactile sensor that provides co-located vision and tactile sensing using reflective
       photoelastic imaging. A thin photoelastic elastomer generates stress-dependent interferograms under contact, while a
-      semi-transparent membrane and controllable illumination enable switching between visual and tactile modes.
-    </p>
-    <p>
-      MVP-Tac is validated through force calibration in the 0–2 N range, video-based hardness classification on exposed and
+      semi-transparent membrane and controllable illumination enable switching between visual and tactile modes. MVP-Tac is validated through force calibration in the 0–2 N range, video-based hardness classification on exposed and
       subdermal tumor phantoms, and a simulated colonoscopy experiment with vision-guided 3D photomapping and in situ
       hardness classification.
     </p>
+  </div>
+  <div class="paper-pages">
+    <img src="./static/images/paper_pages/page1.png" alt="Paper page 1">
+    <img src="./static/images/paper_pages/page2.png" alt="Paper page 2">
+    <img src="./static/images/paper_pages/page3.png" alt="Paper page 3">
+    <img src="./static/images/paper_pages/page4.png" alt="Paper page 4">
+    <img src="./static/images/paper_pages/page5.png" alt="Paper page 5">
+    <img src="./static/images/paper_pages/page6.png" alt="Paper page 6">
+    <img src="./static/images/paper_pages/page7.png" alt="Paper page 7">
+    <img src="./static/images/paper_pages/page8.png" alt="Paper page 8">
+    <!-- <img src="./static/images/paper_pages/page9.png" alt="Paper page 9"> -->
   </div>
 </section>
 
@@ -93,7 +104,7 @@
     <h2>Key Highlights</h2>
     <div class="cards">
       <div class="card">
-        <h3>7 mm × 45 mm</h3>
+        <h3>7 mm</h3>
         <p>Miniaturized form factor designed for endoscopic and RMIS-related deployment.</p>
       </div>
       <div class="card">
@@ -127,7 +138,7 @@
           environments where visual feedback and tactile palpation must coexist.
         </p>
       </div>
-      <img src="./static/images/calibration_page.png" alt="MVP-Tac fabrication and calibration">
+      <img src="./static/images/reflective_photoelasticity_animation_final.gif" alt="MVP-Tac fabrication and calibration">
     </div>
   </div>
 </section>
@@ -136,7 +147,7 @@
   <div class="container">
     <h2>Experimental Results</h2>
     <div class="two-col">
-      <img src="./static/images/results_page.png" alt="MVP-Tac force and tumor classification results">
+      <img src="./static/images/characterizations_half.png" alt="MVP-Tac force and tumor classification results">
       <div>
         <h3>Force Calibration and Hardness Classification</h3>
         <p>
@@ -164,7 +175,9 @@
           classification.
         </p>
       </div>
-      <img src="./static/images/colonoscopy_page.png" alt="MVP-Tac simulated colonoscopy experiment">
+      <video autoplay muted loop playsinline>
+        <source src="./static/videos/colonoscopy.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -178,7 +191,7 @@
   </div>
 </section>
 
-<section class="section" id="paper">
+<!-- <section class="section" id="paper">
   <div class="container narrow">
     <h2>Paper</h2>
     <div class="paper-box">
@@ -203,11 +216,11 @@
       <li>Dataset: coming soon</li>
     </ul>
   </div>
-</section>
+</section> -->
 
 <section class="section" id="citation">
   <div class="container narrow">
-    <h2>Citation</h2>
+    <h2>BibTeX</h2>
     <pre><code>@inproceedings{prince2026mvptac,
   title={MVP-Tac: A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor for Robot-Assisted Minimally Invasive Surgery},
   author={Prince, Md Rakibul Islam and Kim, Jaeeun and Zhao, Yuhao and Vrshek, Mason and Sama, Shivani Reddy and Khera, Adyaa and Athar, Sheeraz and Xu, Zijie and Liu, Jiabin and Lin, Shaoting and Li, Wei and She, Yu},
@@ -218,7 +231,13 @@
 </section>
 
 <footer>
-  <p>Website template adapted for the MVP-Tac project page.</p>
+  <p>
+    This project is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>. You may use, copy, and modify it for non-commercial purposes with attribution. If you distribute modified versions, you must do so under CC BY-NC-SA 4.0 and indicate changes. Commercial use is not permitted under this license. If your use supports a paid product/service, internal revenue-generating activities, or any monetization, you must obtain a separate commercial license from Stanford University. Provided "AS IS", without warranties; no trademark rights granted. (Stanford Office of Technology Licensing Ref. No. S24-339)
+  </p>
+  <p>
+    Website template modified from <a href="https://nerfies.github.io/" target="_blank">NeRFies</a>.
+    This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">source code</a> of this website, we just ask that you link back to this page in the footer. Please remember to remove the analytics code included in the header of the website which you do not want on your website.
+  </p>
 </footer>
 
 </body>
