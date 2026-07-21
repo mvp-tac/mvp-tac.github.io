@@ -33,7 +33,7 @@
     <h1 class="title">MVP-Tac</h1>
     <h2 class="subtitle">A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor<br class="desktop-break">for Robot-Assisted Minimally Invasive Surgery</h2>
 
-    <p class="conference">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+    <!-- <p class="conference">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p> -->
 
     <div class="authors">
       <span><a href="https://prince-css.github.io/" target="_blank">Md Rakibul Islam Prince</a></span>
@@ -65,7 +65,7 @@
 <section class="teaser">
   <div class="container">
     <video autoplay muted loop playsinline>
-      <source src="./static/videos/website_head2.mp4" type="video/mp4">
+      <source src="./static/videos/head_w_rev.mp4" type="video/mp4">
     </video>
     <p class="caption">
       MVP-Tac integrates co-located vision and tactile sensing in a compact endoscope-compatible form factor.
@@ -81,9 +81,9 @@
       yet it still lacks tactile feedback for palpation while operating under strict requirements to preserve reliable vision.
       MVP-Tac is a compact vision-based tactile sensor that provides co-located vision and tactile sensing using reflective
       photoelastic imaging. A thin photoelastic elastomer generates stress-dependent interferograms under contact, while a
-      semi-transparent membrane and controllable illumination enable switching between visual and tactile modes. MVP-Tac is validated through force calibration in the 0–2 N range, video-based hardness classification on exposed and
-      subdermal tumor phantoms, and a simulated colonoscopy experiment with vision-guided 3D photomapping and in situ
-      hardness classification.
+      semi-transparent membrane and controllable illumination enable switching between visual and tactile modes. 
+      MVP-Tac is validated through force calibration in the 0–2 N range, video-based hardness classification on exposed and
+      subdermal tumor phantoms, and a simulated colonoscopy experiment with vision-guided 3D photomapping and in situ hardness classification.
     </p>
   </div>
   <div class="paper-pages">
@@ -143,6 +143,51 @@
   </div>
 </section>
 
+
+<section class="section" id="modality">
+  <div class="container">
+    <h2>Dual Modality</h2>
+    <div class="modality-cards">
+      <div class="modality-card">
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/v2.mp4" type="video/mp4">
+        </video>
+        <h3>Vision Mode</h3>
+        <p>Sensor view under ambient room lighting only.</p>
+        <div class="modality-indicator"><i class="fas fa-sun"></i></div>
+      </div>
+      <div class="modality-card">
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/v1.mp4" type="video/mp4">
+        </video>
+        <h3>Vision Mode</h3>
+        <p>Sensor view with external illumination enabled.</p>
+        <div class="modality-indicator lit"><i class="fas fa-sun"></i></div>
+      </div>
+      <div class="modality-card">
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/tactile_sphere.mp4" type="video/mp4">
+        </video>
+        <h3>Tactile Mode</h3>
+        <p>Photoelastic response to a spherical indenter pressed on the sensor pad.</p>
+        <div class="modality-indicator">
+          <img src="./static/images/sphere.png" alt="Sphere indenter">
+        </div>
+      </div>
+      <div class="modality-card">
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/tactile_ph2.mp4" type="video/mp4">
+        </video>
+        <h3>Tactile Mode</h3>
+        <p>Photoelastic response to a PH2 screwdriver bit pressed on the sensor pad.</p>
+        <div class="modality-indicator">
+          <img src="./static/images/ph2_bit.png" alt="PH2 screwdriver bit">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section gray" id="results">
   <div class="container">
     <h2>Experimental Results</h2>
@@ -185,9 +230,9 @@
 <section class="section gray" id="video">
   <div class="container narrow">
     <h2>Video</h2>
-    <div class="video-placeholder">
-      <p>Supplementary video will be added here.</p>
-    </div>
+    <video controls playsinline class="full-video">
+      <source src="./static/videos/full_video.mp4" type="video/mp4">
+    </video>
   </div>
 </section>
 
